@@ -1,0 +1,190 @@
+body{
+  background-color: oldlace;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: oldlace;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    padding: 10px 100px 0 100px;
+    z-index: 50;
+    } 
+    .header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, 2);
+    }
+
+    #menu-icon {
+
+        font-size: 3rem;
+        color: var(--text-color);
+        padding-top: 15px;
+
+    } 
+    /* =====================================First section==========================================*/
+    .first-food{
+      display: flex;
+      grid-column-gap: 120px;
+    }
+    .left-first-food img{
+           border-radius: 50%;
+           height: 300px;
+           width: 270px;
+           margin-top: 50px;
+           margin-left: 130px;
+            }
+     .right-first-food{
+      padding: 100px 0;
+      
+
+     }       
+     .right-first-food h1{
+       font-size: 3rem;
+      font-family:  "Roboto", sans-serif;
+      line-height: 60px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+      .right-first-food span{
+          background-color: green;
+          color: white;
+          padding: 5px;
+      }
+      .right-first-food button{
+        padding: 5px;
+        margin-top: 20px;
+        background-color: orange;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+        border: none;
+      }
+      button:hover {
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+      }
+
+      /* ==================================Features=============================================== */
+
+      .features{
+        display: flex;
+        grid-column-gap: 50px;
+        padding: 70px;
+        line-height: 20px;
+        
+      }
+      
+      .left-features-img:hover{
+        box-shadow: 6px 6px 6px rgba(1, 1, 1, 0.05);;
+        transition: .3sec ease-in-out;
+      }
+      .left-features-img{
+        display: flex;
+        grid-column-gap: 17px;
+        transition: 0.3s ease-in-out;
+      }
+      .left-features-img img{
+        height: 70px;
+      }
+      .right-feature{
+        margin-top: 10px;
+      }
+      .right-feature h3{
+          margin-bottom: 5px;
+          font-size: 1rem;
+      }
+      .right-feature p{
+        font-size: 1rem;
+      }
+
+/* ===================================Menu section================================================== */
+.menu-button{
+  padding: 70px 0 0 585px;
+}
+.menu-button button{
+  padding: 6.5px;
+  background-color: rgb(60, 96, 6); 
+  border: none;
+}
+.menu-section h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.grid-image {
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.grid-image:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+    padding: 100px;
+}
+
+.item1 {
+  grid-area: I1;
+}
+.item2 {
+  grid-area: I2;
+}
+.item3 {
+  grid-area: I3;
+}
+.item4 {
+  grid-area: I4;
+}
+.item5 {
+  grid-area: I5;
+}
+.item6 {
+  grid-area: I6;
+}
+.item7 {
+  grid-area: I7;
+}
+
+/* =====================================Footer Section============================ */
+
+.footer-section{
+  display: flex;
+  grid-column-gap: 120px;
+  padding: 80px 130px 30px 130px;
+  background-color:  #fedbae;
+  line-height: 26px;
+}
+.footer-column-2 ul {
+  list-style: none;
+  margin-top: 20px;
+  
+}
+.footer-column-4{
+  line-height: 35px;
+}
+.icons-container{
+  display: flex;
+   grid-column-gap: 20px;
+}
+#icon{
+  font-size: 30px;
+
+}
